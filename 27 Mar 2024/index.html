@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>CSS Display</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div style="text-align: center">
+			<form id="myForm">
+				<h1 class="heading-text">Hi</h1>
+				<h1 class="heading-text">There!</h1>
+				<p>Login into the application with your userid and password</p>
+				<div>
+					<label for="myUserid">Userid<font color="red">*</font></label>
+					<input id="myUserid" type="text" required><br>
+					<label for="myAge">Age<font color="red">*</font></label>
+					<input id="myAge" type="number" min="12" max="80" required>
+					<label for="myPass">Password<font color="red">*</font></label>
+					<input id="myPass" type="password" required>
+				</div>
+				<button type="submit" class="btn">Submit</button>
+				<button type="reset" class="btn">Reset</button>
+			</form>
+		</div>
+		<button onclick="console.log('button is clicked')">Click Me!</button>
+
+		<script>
+			let i = 0, x = 22, y = 12, name=`Ram`;
+			console.log(x+y+name);
+			if (x > 20) {
+				console.log("x is big");
+			} else {
+				console.log("x is small");
+			}
+
+			/*for (i = 0; i < y; i++) {
+				console.log(i);
+			}*/
+			while (i < y) {
+				console.log(i);
+				i++;
+			}
+
+			function sum(a, b) {
+				console.log("Sum of "+a+"and"+b+" is: "+(a+b));
+			}
+
+			sum(10, 12);
+		</script>
+	</body>
+</html>
