@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+		<input id="num-a" type="number" placeholder="Enter a number">
+		<input id="num-b" type="number" placeholder="Enter a number">
+		<input id="result" placeholder="Result of addition" readonly>
+
+		<button onclick="handleClick()">Add</button>
+	</body>
+	<script>
+		function sum(a, b) {
+			return a+b;
+		}
+
+		function handleClick() {
+			let numA = document.getElementById('num-a').value,
+			numB = document.getElementById('num-b').value;
+
+			let result = sum(Number(numA), Number(numB));
+			let resultBox = document.getElementById('result');
+			resultBox.value = result;
+		}
+	</script>
+</html>
