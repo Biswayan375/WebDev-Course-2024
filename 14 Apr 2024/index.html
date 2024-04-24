@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./button.css">
+</head>
+<body>
+	<h1 id="someId"></h1>
+	<button class="btn" onclick="handleClick()">Click Me</button>
+
+	<div class="container">
+		<h2>Count: <span id="countText">0</span> times</h2>
+		<button style="background-color: green;" class="btn" onclick="increment()">Increment</button>
+		<button style="background-color: red;" class="btn" onclick="decrement()">Decrement</button>
+		<button style="background-color: gray;" class="btn" onclick="resetCount()">Reset</button>
+	</div>
+
+	<button id="testButton" class="btn">Test</button>
+
+	<br>
+	<input type="text" id="exp" placeholder="Enter your expression">
+	<button class="btn" onclick="calculate()">Calculate</button>
+
+	<script src="./script2.js"></script>
+	<script src="./app.js"></script>
+</body>
+</html>
