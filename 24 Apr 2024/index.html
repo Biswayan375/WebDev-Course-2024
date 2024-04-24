@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<h1>What is your choice?</h1>
+	<h1>Click the button to choose</h1>
+	<button onclick="showAlert()">Show alert</button>
+</body>
+<script type="text/javascript">
+	function showAlert() {
+		let ret = confirm("Are you sure?");
+		let h1s = document.getElementsByTagName("h1");
+
+		if (ret) {
+			h1s[0].innerHTML = "choice is okay";
+			h1s[0].style.color = "green";
+			h1s[0].style.textAlign = "right";
+		} else {
+			h1s[0].innerHTML = "choice is cancel";
+			h1s[0].style = "color: red; text-align: center";
+		}
+	}
+</script>
+</html>
